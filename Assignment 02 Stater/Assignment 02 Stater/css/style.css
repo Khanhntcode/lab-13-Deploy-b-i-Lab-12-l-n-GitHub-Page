@@ -1,0 +1,367 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container2 {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  color: #1d3557;
+}
+
+.job-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.navbar {
+  height: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  font-size: 12px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav1 {
+  grid-column: 1/3;
+}
+.nav4 {
+  grid-column: 5/7;
+}
+.nav7 {
+  grid-column: 9/-1;
+}
+.nava3 {
+  font-size: 10px;
+}
+#banner {
+  width: 100%;
+  height: 800px;
+}
+
+/* Banner */
+.img-banner {
+  background-image: url("../images/banner.jpg");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  filter: brightness(50%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.text-banner {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, 70%);
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 44px;
+  line-height: 1.1;
+}
+
+header p {
+  font-size: 12px;
+}
+
+.div-nar {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  text-decoration: none;
+  color: #1d3557;
+  text-transform: uppercase;
+}
+
+.icon {
+  color: rgb(25, 156, 219);
+  font-weight: bold;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #00000009;
+  line-height: 2;
+  margin: 10px 50px 50px 50px;
+}
+#personal-info {
+  background: #0000001e;
+  padding: 60px 200px 20px 40px;
+}
+
+li span {
+  font-weight: bold;
+}
+.mt-40 {
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+.section-title {
+  width: 70%;
+  display: grid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+#target {
+  padding: 60px 40px 20px 200px;
+}
+
+/* Xây dựng phần thông tin nghề nghiệp */
+.job-grid {
+  display: grid;
+  width: 70%;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 20px;
+  align-items: center;
+}
+
+.job-box-grid {
+  height: 690px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 100px;
+  border: 2px solid #00000031;
+}
+.job-title {
+  display: grid;
+  place-items: center;
+}
+.job-icon {
+  display: grid;
+  place-items: center;
+}
+
+.job-box-grid1 {
+  height: 350px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 100px;
+  border: 2px solid #00000031;
+}
+
+.job-content {
+  grid-column: 1/-1;
+  margin: 20px;
+  padding-left: 70px;
+}
+.now {
+  background: rgb(1, 124, 255);
+  padding: 4px 8px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+.list1 {
+  position: relative;
+}
+.job-node::before {
+  content: "•";
+  color: rgb(1, 124, 255);
+  font-weight: bolder;
+  display: inline-block;
+  font-size: 18px;
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+
+.icon1 {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  padding-top: 6px;
+  padding-left: 4px;
+  color: rgb(1, 124, 255);
+  border: 2px solid rgb(1, 124, 255);
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.job-content1 {
+  padding: 0 80px 0 50px;
+  height: 30px;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin-bottom: 50px;
+  font-size: 12px;
+}
+.like {
+  display: grid;
+  place-items: center;
+}
+
+/* Ngôn ngữ */
+.good {
+  background: rgb(1, 124, 255);
+  display: inline-block;
+  height: 4px;
+  margin-right: 10px;
+  width: 45px;
+}
+.bad {
+  background: #dee2e6;
+  display: inline-block;
+  height: 4px;
+  margin-right: 10px;
+  width: 45px;
+}
+.section-content {
+  grid-column: 1/-1;
+  margin-bottom: 50px;
+}
+
+/* Chứng chỉ - Giải thưởng */
+.certificate {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+.container1 {
+  width: 70%;
+}
+.cer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  row-gap: 30px;
+}
+.img-cc {
+  width: 240px;
+  margin-right: 10px;
+  box-shadow: 0 10px 20px 0 #00000031;
+}
+.cer-content {
+  padding: 20px 20px 20px 0;
+  display: flex;
+  gap: 20px;
+}
+.cer-content-2 {
+  padding-left: 20px;
+  border-left: 2px solid #d6c08d;
+}
+.cer-content-3 {
+  grid-column: 1/-1;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+  border-top: 2px solid #d6c08d;
+}
+
+/* Dự án */
+.project-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  place-items: center;
+}
+.project-flex {
+  height: 615px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px 0 #00000031;
+}
+.project-title {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  border-top: 1px solid #bdc3c7;
+  border-left: 1px solid #bdc3c7;
+  border-right: 1px solid #bdc3c7;
+}
+.project-border {
+  padding: 10px;
+  border-top: 1px solid #bdc3c7;
+  border-left: 1px solid #bdc3c7;
+  border-right: 1px solid #bdc3c7;
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  padding: 10px;
+}
+tr td:first-child {
+  width: 30%;
+  vertical-align: top;
+}
+tr {
+  border: 1px solid #bdc3c7;
+}
+/* Footer */
+#footer {
+  margin: 50px;
+  height: 8cap;
+  line-height: 1.5;
+  text-align: center;
+}
+#footer a:link,
+a:visited {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 50px;
+  text-decoration: none;
+  color: #1d3557;
+}
+
+#footer a:hover,
+a:active {
+  cursor: grab;
+  color: #0abde3;
+}
+
+/* Naang cao */
+.avt-default {
+  height: 280px;
+  width: 240px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #ffff;
+}
+
+.avt-banner {
+  width: max-content;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  z-index: 1;
+}
+#project {
+  width: 100%;
+}
